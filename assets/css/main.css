@@ -2959,7 +2959,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #17962c;
 			color: #d3d4e4;
 		}
 
@@ -3013,7 +3013,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #505393;
+					background: #2cac5d;
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
@@ -3123,15 +3123,15 @@ input, select, textarea {
 
 		.wrapper.style5 {
 			background-color: #ffffff;
-			color: #4E4852;
+			color: rgb(72, 82, 76);
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: rgb(46, 66, 59);
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: rgb(46, 66, 53);
 			}
 
 			.wrapper.style5 hr {
@@ -3147,7 +3147,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 header p {
-				color: #8E8892;
+				color: rgb(136, 146, 142);
 			}
 
 			.wrapper.style5 header.major h2, .wrapper.style5 header.major h3, .wrapper.style5 header.major h4, .wrapper.style5 header.major h5, .wrapper.style5 header.major h6 {
@@ -3155,11 +3155,11 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 header.major p {
-				color: #4E4852;
+				color: rgb(72, 82, 77);
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: rgb(46, 66, 56);
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3175,7 +3175,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style5 select option {
-					color: #2E3842;
+					color: rgb(46, 66, 56);
 					background: #ffffff;
 				}
 
