@@ -27,8 +27,12 @@
   width: 1em;                     /* largeur à 100% */
   height: 1em;                    /* hauteur à 100% */
   clip: rect(0, .5em, 1em, 0);    /* on ne garde que la partie gauche */
-  display: none;
 }
+
+.progress-sup50 {
+    display: none;
+    clip: rect(0, 1em, 1em, .5em);
+  }
 
 .progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-sup50,
 .progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-sup50,
