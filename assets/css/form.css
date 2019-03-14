@@ -1257,3 +1257,16 @@
   .progress-circle[data-value^='100'] .progress-sup50 {
     display:block;
   }
+
+  .progress-circle:after {
+    content: attr(data-value) "%";  /* récup. valeur de progression */
+    font-size: 0.15em;              /* taille de la font en % du parent */
+    height: 100%;                   /* centrage dans le parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /*-- pour effet shadow intérieur --*/
+    border-radius: 50%;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .5) inset;
+  }
