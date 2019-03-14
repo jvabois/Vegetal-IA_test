@@ -1243,3 +1243,17 @@
 .progress-circle[data-value="100"]    .progress-barre,
 .progress-circle[data-value="100."]   .progress-barre,
 .progress-circle[data-value="100.0"]  .progress-barre {transform: rotate(360.00deg)}
+
+.progress-sup50 {
+    display: none;
+    clip: rect(0, 1em, 1em, .5em);
+  }
+
+  .progress-circle[data-value^='5']:not([data-value='5']):not([data-value^='5.']) .progress-sup50,
+  .progress-circle[data-value^='6']:not([data-value='6']):not([data-value^='6.']) .progress-sup50,
+  .progress-circle[data-value^='7']:not([data-value='7']):not([data-value^='7.']) .progress-sup50,
+  .progress-circle[data-value^='8']:not([data-value='8']):not([data-value^='8.']) .progress-sup50,
+  .progress-circle[data-value^='9']:not([data-value='9']):not([data-value^='9.']) .progress-sup50,
+  .progress-circle[data-value^='100'] .progress-sup50 {
+    display:block;
+  }
