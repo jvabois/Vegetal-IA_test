@@ -2005,18 +2005,6 @@ input, select, textarea {
 		position: relative;
 	}
 
-	icon li {
-		margin: auto;
-		text-align: center;
-	}
-
-	.icon li p{
-		text-align: center;
-		float: left;
-		width: 100%;
-		font-family: "Open Sans", Helvetica, sans-serif;
-	}
-
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2287,6 +2275,14 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+	}
+
+	ul.icons li p{
+		text-align: center;
+		float: left;
+		width: 100%;
+		margin: auto;
+		color : rgb(153, 0, 26);
 	}
 
 		ul.icons li {
