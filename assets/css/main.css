@@ -2283,6 +2283,7 @@ input, select, textarea {
 		width: 100%;
 		margin: auto;
 		color : rgb(153, 0, 26);
+		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 
 		ul.icons li {
