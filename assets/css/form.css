@@ -60,7 +60,7 @@
 .progress-circle4{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 10em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
