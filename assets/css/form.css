@@ -1841,6 +1841,7 @@ clip: rect(auto, auto, auto, auto);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     
     /*-- pour effet shadow intérieur --*/
     border-radius: 50%;
@@ -1854,6 +1855,7 @@ clip: rect(auto, auto, auto, auto);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     
     /*-- pour effet shadow intérieur --*/
     border-radius: 50%;
@@ -1861,12 +1863,13 @@ clip: rect(auto, auto, auto, auto);
 }
 
 .progress-circle2:after {
-    content: attr(data-value) "%";  /* récup. valeur de progression */
+    content: attr(data-value) "°C";  /* récup. valeur de progression */
     font-size: 0.15em;              /* taille de la font en % du parent */
     height: 100%;                   /* centrage dans le parent */
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     
     /*-- pour effet shadow intérieur --*/
     border-radius: 50%;
@@ -1880,6 +1883,7 @@ clip: rect(auto, auto, auto, auto);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     
     /*-- pour effet shadow intérieur --*/
     border-radius: 50%;
@@ -1893,6 +1897,7 @@ clip: rect(auto, auto, auto, auto);
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Open Sans", Helvetica, sans-serif;
     
     /*-- pour effet shadow intérieur --*/
     border-radius: 50%;
