@@ -23,7 +23,7 @@
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
+    border: .15em solid rgb(200, 241, 221);      /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -38,7 +38,7 @@
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
+    border: .15em solid rgb(200, 241, 221);    /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -53,7 +53,7 @@
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid 200, 241, 221);       /* couleur de fond de l'anneau */
+    border: .15em solid rgb(200, 241, 221);      /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -68,7 +68,7 @@
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
+    border: .15em solid rgb(200, 241, 221);     /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
