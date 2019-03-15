@@ -2007,8 +2007,9 @@ input, select, textarea {
 
 	.icon li p{
 		text-align: center;
-		margin: auto;
-		padding: auto;
+		margin-right: auto;
+		margin-left: auto;
+		float: left;
 		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 
