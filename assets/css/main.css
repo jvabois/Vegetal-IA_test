@@ -2008,6 +2008,7 @@ input, select, textarea {
 	icon li {
 		margin: auto;
 		text-align: center;
+		position: relative;
 	}
 
 	.icon li p{
