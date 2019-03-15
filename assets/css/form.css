@@ -5,11 +5,11 @@
 .progress-circle{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 13em;                 /* pour définir les dimensions */
+    font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
+    border: .15em solid rgb(200, 241, 221);       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -19,11 +19,11 @@
 .progress-circle1{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 13em;                 /* pour définir les dimensions */
+    font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
+    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -34,11 +34,11 @@
 .progress-circle2{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 13em;                 /* pour définir les dimensions */
+    font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
+    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -49,11 +49,11 @@
 .progress-circle3{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 13em;                 /* pour définir les dimensions */
+    font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
+    border: .15em solid 200, 241, 221);       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -64,11 +64,11 @@
 .progress-circle4{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 11em;                 /* pour définir les dimensions */
+    font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
+    border: .15em solid 200, 241, 221);      /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
