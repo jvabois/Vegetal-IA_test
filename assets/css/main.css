@@ -2005,6 +2005,11 @@ input, select, textarea {
 		position: relative;
 	}
 
+	icon li {
+		margin: auto;
+		text-align: center;
+	}
+
 	.icon li p{
 		text-align: center;
 		margin-right: auto;
