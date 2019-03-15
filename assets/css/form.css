@@ -3,7 +3,7 @@
 
 
 .progress-circle{
-    /*position: relative;             /* pour servir de référent */
+    position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
     font-size: 12em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
