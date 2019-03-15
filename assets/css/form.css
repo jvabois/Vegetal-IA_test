@@ -1,46 +1,49 @@
 .progress-circle{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 10em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
-
+    float: left
 }
 
 .progress-circle1{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 6em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
+    float: left
 }
 
 .progress-circle2{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 6em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
+    float: left
 }
 
 .progress-circle3{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 6em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
+    float: left
 }
 
 .progress-circle4{
@@ -52,6 +55,7 @@
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
+    float: left
 }
 
 
