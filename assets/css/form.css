@@ -1,3 +1,7 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+
 .progress-circle{
     position: relative;             /* pour servir de référent */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
@@ -9,7 +13,7 @@
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
-    margin: O;
+    margin: auto;
 }
 
 .progress-circle1{
@@ -23,7 +27,7 @@
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
-    margin: O;
+    margin: auto;
     text-align: center;
 }
 
@@ -38,7 +42,7 @@
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
-    margin: O;
+    margin: auto;
     text-align: center;
 }
 
@@ -53,7 +57,7 @@
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
-    margin: O;
+    margin: auto;
     text-align: center;
 }
 
@@ -68,7 +72,7 @@
     background-color: #FFF;         /* couleur de fond de la progress bar */
     float: left;
     font-family: "Open Sans", Helvetica, sans-serif;
-    margin: O;
+    margin: auto;
     text-align: center;
 }
 
@@ -1891,7 +1895,7 @@ clip: rect(auto, auto, auto, auto);
 }
 
 .progress-circle4:after {
-    content: attr(data-value) "%";  /* récup. valeur de progression */
+    content: attr(data-value) "";  /* récup. valeur de progression */
     font-size: 0.15em;              /* taille de la font en % du parent */
     height: 100%;                   /* centrage dans le parent */
     display: flex;
