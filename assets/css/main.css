@@ -2008,14 +2008,12 @@ input, select, textarea {
 	icon li {
 		margin: auto;
 		text-align: center;
-		position: relative;
 	}
 
 	.icon li p{
 		text-align: center;
-		margin-right: auto;
-		margin-left: auto;
 		float: left;
+		width: 100%;
 		font-family: "Open Sans", Helvetica, sans-serif;
 	}
 
