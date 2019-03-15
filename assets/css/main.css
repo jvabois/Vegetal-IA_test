@@ -2005,7 +2005,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-	.icon p{
+	.icon li p{
 		text-align: center;
 		margin: auto;
 		padding: auto;
