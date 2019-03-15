@@ -19,7 +19,8 @@
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
-    float: left
+    float: left;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .progress-circle2{
@@ -31,7 +32,8 @@
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
-    float: left
+    float: left;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .progress-circle3{
@@ -43,7 +45,8 @@
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
-    float: left
+    float: left;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .progress-circle4{
@@ -55,7 +58,8 @@
     border-radius: 50%;             /* rendu aspect circulaire */
     border: .15em solid #CDE;       /* couleur de fond de l'anneau */
     background-color: #FFF;         /* couleur de fond de la progress bar */
-    float: left
+    float: left;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 
