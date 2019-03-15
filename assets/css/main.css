@@ -2005,6 +2005,13 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.icon p{
+		text-align: center;
+		margin: auto;
+		padding: auto;
+		font-family: "Open Sans", Helvetica, sans-serif;
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
