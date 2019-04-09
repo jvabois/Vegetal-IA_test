@@ -3567,6 +3567,25 @@ input, select, textarea {
 		text-align: center;
 	}
 
+		#banner img {
+			-moz-transform: scale(1);
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			display: inline-block;
+			font-size: 1.75em;
+			opacity: 1;
+			padding: 0.35em 1em;
+			position: relative;
+			z-index: 1;
+
+			max-width: 10%;
+		}
+
 		#banner h2 {
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
