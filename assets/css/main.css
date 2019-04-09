@@ -3583,7 +3583,7 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 
-			max-width: 30%;
+			max-width: 20%;
 		}
 
 		#banner h2 {
