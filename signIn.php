@@ -8,5 +8,5 @@ echo '<p><i>Vous êtes ici</i> : <a href="./index.php">Index du forum</a> --> Co
 ?>
 <?php
 echo '<h1>Connexion</h1>';
-if ($id!=0) erreur(ERR_IS_CO);
+if ($id!=0) erreur(ERR_IS_CO); //verification si déjà connecté ou non
 ?>
