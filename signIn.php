@@ -9,8 +9,14 @@ include("includes/menu.php");
 echo '<p><i>Vous êtes ici</i> : <a href="./index.php">Index du forum</a> --> Connexion';
 ?>
 
-
 <html>
+
+<?php
+echo '<h1>Connexion</h1>';
+if ($id!=0) erreur(ERR_IS_CO);
+?>
+
+
 	<head>
 		<title>vegetal'IA</title>
 		<meta charset="utf-8" />
