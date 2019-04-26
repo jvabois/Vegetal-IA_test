@@ -3,6 +3,8 @@
 <html>
 	<?php
 	session_start();
+	mysql_connect("localhost", "root", "")
+		or die("Impossible de se connecter : " . mysql_error());;
 	$titre="Connexion";
 	include("includes/identifiants.php");
 	include("includes/functions.php");
