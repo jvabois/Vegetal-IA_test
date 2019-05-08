@@ -1,7 +1,7 @@
 <?php
 
     define('HOST','localhost');
-    define('DB_NAME','siteweb');
+    define('DB_NAME','vegetalia');
     define('USER','root');
     define('PASS','');
 
