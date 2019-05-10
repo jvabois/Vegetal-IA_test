@@ -21,11 +21,10 @@
 	</head>
 	<body class="is-preload">
 
-		<?php
-		echo'
-		<div id="page-wrapper">
+	
+	<div id="page-wrapper">
 		<header id="header">
-			<h1><a href="index.html">vegetal\'IA</a></h1>
+			<h1><a href="index.html">vegetalIA</a></h1>
 			<nav id="nav">
 				<ul>
 					<li class="special">
@@ -45,55 +44,51 @@
 				</ul>
 			</nav>
 		</header>
-		';
-		?>
-
+		
+		<h1>Connexion</h1>
 		<?php
-			echo '<h1>Connexion</h1>';
-			if ($id!=0) erreur(ERR_IS_CO); //verification si déjà connecté ou non
-		?>
+		if ($id!=0) erreur(ERR_IS_CO); //verification si déjà connecté ou non
 
-		<?php
-			if (!isset($_POST['pseudo'])) //On verifie si le champs pseudo a été rempli
-			{
-				echo '<article id="main">
-						<header>
-							<h2>Connexion</h2>
-							<p>Connectez vous pour pouvoir intéragir avec votre vegetalIA</p>
-						</header>
-						<section class="wrapper style5">
-							<div class="inner">
+		if (!isset($_POST['pseudo'])) //On verifie si le champs pseudo a été rempli
+		{
+			echo '<article id="main">
+				<header>
+					<h2>Connexion</h2>
+					<p>Connectez vous pour pouvoir intéragir avec votre vegetalIA</p>
+				</header>
+				<section class="wrapper style5">
+					<div class="inner">
 
-								<h3>CONNECTEZ VOUS POUR AVOIR L\'ACCÈS</h3>
-                                    <form method="post" action="signIn.php">
-                                        <div class="row gtr-uniform">
-                                            <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="email" id="demo-name" placeholder="Identifiant" />
-                                            </div>
-                                            <div class="col-6 col-12-xsmall">
-                                                <input type="password" name="password" id="demo-email" placeholder="Password" />
-                                            </div>
-                                            <div class="col-12">
-                                                <ul class="actions">
-                                                    <li><input type="submit" value="conexion" class="primary" /></li>
-												</ul>
-												<p>vous ne possédez pas de compte ? <a href="signUp.html">s\'enregistrer</a></p>
-                                            </div>
-                                        </div>
-                                    </form>
-								<hr />
+						<h3>CONNECTEZ VOUS POUR AVOIR LACCÈS</h3>
+							<form method="post" action="signIn.php">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="email" id="demo-name" placeholder="Identifiant" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="password" name="password" id="demo-email" placeholder="Password" />
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="conexion" class="primary" /></li>
+										</ul>
+										<p>vous ne possédez pas de compte ? <a href="signUp.html">senregistrer</a></p>
+									</div>
+								</div>
+							</form>
+						<hr />
 
-							</div>
-						</section>
-					</article>
+					</div>
+				</section>
+			</article>
+			
+			
+			</body>
+			</html>';
+			//<label for="pseudo">Pseudo :</label><input name="pseudo" type="text" id="pseudo" /><br />
+			//<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
 				
-				
-				</body>
-				</html>';
-				//<label for="pseudo">Pseudo :</label><input name="pseudo" type="text" id="pseudo" /><br />
-				//<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
-					
-			}
+		}
 
 			else
 			{
@@ -122,9 +117,9 @@
 					}
 					else // Acces pas OK !
 					{
-						$message = '<p>Une erreur s\'est produite 
+						$message = '<p>Une erreur sest produite 
 						pendant votre identification.<br /> Le mot de passe ou le pseudo 
-							entré n\'est pas correcte.</p><p>Cliquez <a href="./signIn.php">ici</a> 
+							entré nest pas correcte.</p><p>Cliquez <a href="./signIn.php">ici</a> 
 						pour revenir à la page précédente
 						<br /><br />Cliquez <a href="./index.html">ici</a> 
 						pour revenir à la page d accueil</p>';
@@ -132,10 +127,7 @@
 					$query->CloseCursor();
 				}
 				echo $message.'</div></body></html>';
-			}
-		?>
-		<?php
-			echo '
+			} 
 			<footer id="footer">
 				<ul class="icons">
 					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
@@ -145,7 +137,7 @@
 					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; vegetal\'IA</li><li>Design: <a href="">ElQueNoApoyaNoFo...</a></li>
+					<li>&copy; vegetalIA</li><li>Design: <a href="">ElQueNoApoyaNoFo...</a></li>
 				</ul>
 			</footer>
 			
@@ -159,8 +151,6 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-
-			';
 			
 		?>
 		
