@@ -42,70 +42,31 @@ include "functions.php";
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Enregistrez vous</h2>
-							<p>pour pouvoir pleinement profiter de votre vegetal'IA/p>
+							<h2>Connexion</h2>
+							<p>Connectez vous pour pouvoir intéragir avec votre vegetal'IA</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<h3>ENREGISTREZ VOUS</h3>
+								<h3>CONNECTEZ VOUS POUR AVOIR L'ACCÈS</h3>
                                     <form method="post" action="#">
                                         <div class="row gtr-uniform">
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="first_name" id="demo-name" value="" placeholder="Prénom" />
+                                                <input type="text" name="log_email" id="demo-name" value="" placeholder="Email" />
                                             </div>
-
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="last_name" id="demo-name" value="" placeholder="Nom" />
-                                            </div>
-
-                                             <div class="col-6 col-12-xsmall">
-                                                <input type="email" name="email" id="demo-name" value="" placeholder="Email" />
-                                             </div>
-
-                                            <div class="col-6 col-12-xsmall">
-                                               <input type="text" name="id" id="demo-name" value="" placeholder="Identifiant" />
-                                            </div>
-
-                                            <div class="col-6 col-12-xsmall">
-                                                <input type="password" name="password" id="demo-email" value="" placeholder="Mot de passe" />
+                                                <input type="password" name="log_password" id="demo-email" value="" placeholder="Password" />
                                             </div>
                                             <div class="col-12">
-
                                                 <ul class="actions">
-                                                    <li><input type="submit" name ="send" value="OK" class="primary" /></li>
-                                                </ul>
-                                    
+                                                    <li><input type="submit" name='send' value="CONNECTION" class="primary" /></li>
+												</ul>
+												<p>vous n'avez pas de compte ? <a href="signUp.html">s'enregistrer</a></p>
                                             </div>
-                                            <?php                        
-			                                        if(isset($_POST['send'])){
-			                                        	//echo ("Champs : ".$_POST['first_name'].$_POST['last_name'].$_POST['email'].$_POST['id'].$_POST['password']);
-			                                            extract($_POST);
-
-														try {
-														    $conn = new PDO("mysql:host=sql313.byethost.com;dbname=b11_23898245_vegetalia",'b11_23898245','vegetalia95');
-														    // set the PDO error mode to exception
-															$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-															$secret = password_hash($password, PASSWORD_BCRYPT);
-															echo'<p>secret : '.$secret.'</p>';
-														    $sql = "INSERT INTO usr (first_name, last_name, email, id, upassword) VALUES ('$first_name','$last_name','$email','$id','$secret')";
-														    // use exec() because no results are returned
-														    $conn->exec($sql);
-															echo "<p>Inscription réussie. Bienvenue ! </p>";
-														}
-														catch(PDOException $e)
-													    {
-													    echo $sql . "<br>" . $e->getMessage();
-													    }
-			                                        }
-
-			                                        else{
-			                                            echo '<p>Veuillez renseigner tous les champs.</p>';
-			                                        }
-			                                    ?>
-                                        </div>
+										</div>
                                     </form>
-                                     
+								<hr />
+
 							</div>
 						</section>
 					</article>
