@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
-<?php include 'database.php'; ?>
-<?php include 'functions.php'; ?>
+<?php
+include "functions.php";
+?>
+
 <html>
 	<head>
 		<title>vegetal'IA</title>
@@ -50,10 +52,10 @@
                                     <form method="post" action="#">
                                         <div class="row gtr-uniform">
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="lemail" id="demo-name" value="" placeholder="Email" />
+                                                <input type="text" name="log_email" id="demo-name" value="" placeholder="Email" />
                                             </div>
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="lpassword" id="demo-email" value="" placeholder="Password" />
+                                                <input type="password" name="log_password" id="demo-email" value="" placeholder="Password" />
                                             </div>
                                             <div class="col-12">
                                                 <ul class="actions">
@@ -65,37 +67,67 @@
                                     </form>
 								<hr />
 
-								<?php 
-									setConnexion(); //fonction connexion bd 
-									global $db;
-
+								<?php                        
 									if(isset($_POST['send'])){
-										extract($_POST);
+										if(!empty($log_email) && !empty($log_password)){
+											$mail = $_POST['log_email'];
+											$pass = $_POST['log_password'];
 
-										if(!empty($lemail) && !empty($lpassword)){
-											$q = $db->prepare("SELECT * FROM user WHERE email = :email");
-											$q->execute(['email' => $lemail]);
-											$result = $q->fetch();
+											try {
+												$conn = new PDO("mysql:host=sql313.byethost.com;dbname=b11_23898245_vegetalia",'b11_23898245','vegetalia95');
+												// set the PDO error mode to exception
+												$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-											if($result == true){
-												//Compte existant
-												if(password_verify($password, $result['password'])){
-													echo '<p>Mot de passe correct, connexion effectuée.</p>';
+												$sql = "SELECT email, upassword FROM usr WHERE email= AND upassword=";
+												$stmt=$pdo->prepare($sql);
+												// use exec() because no results are returned
+												//$conn->exec($sql);
 
-													//$_SESSION['email'] = $result['email']; SESSION, A VOIR PLUS TARD
+												$stmt->bindValue(':email', $log_email);
+
+												$stmt->execute();
+
+												$user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+												if($user === false){
+													die('Incorrect username / password combination!');
+												} 
+												else{
+													//User account found. Check to see if the given password matches the
+													//password hash that we stored in our users table.
+													
+													//Compare the passwords.
+													$validPassword = password_verify($pass, $user['upassword']);//PAS SUR POUR LE upassword
+													
+													//If $validPassword is TRUE, the login has been successful.
+													if($validPassword){
+														//Provide the user with a login session.
+														$_SESSION['user_id'] = $user['id'];
+														$_SESSION['logged_in'] = time();
+														
+														//Redirect to our protected page, which we called home.php
+														header('Location: logOK.php');
+														exit;
+													} 
+													else{
+														die('<p>Aucun mot de passe correspondant à cet email.</p>');
+													}
 												}
 											}
-											else{
-												echo'Aucun email correspondant pour :'.$lemail.'n\'existe pas';
+											catch(PDOException $e)
+											{
+												echo $sql . "<br>" . $e->getMessage();
 											}
-										}	
+										}
 										else{
-											echo'Complétez l\'ensemble des champs';
-										}									
+											echo '<p> Tous les champs n\'ont pas été remplis</p>';
+										}
 									}
 
+									else{
+										echo '<p>Veuillez renseigner tous les champs.</p>';
+									}
 								?>
-
 							</div>
 						</section>
 					</article>

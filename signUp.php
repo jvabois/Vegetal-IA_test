@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<?php
+include "functions.php";
+
+session_start();
+?>
 
 <html>
 	<head>
@@ -49,32 +54,63 @@
                                     <form method="post" action="#">
                                         <div class="row gtr-uniform">
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Prénom" />
+                                                <input type="text" name="first_name" id="demo-name" value="" placeholder="Prénom" />
                                             </div>
 
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Nom" />
+                                                <input type="text" name="last_name" id="demo-name" value="" placeholder="Nom" />
                                             </div>
 
                                              <div class="col-6 col-12-xsmall">
-                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Email" />
+                                                <input type="email" name="email" id="demo-name" value="" placeholder="Email" />
                                              </div>
 
                                             <div class="col-6 col-12-xsmall">
-                                               <input type="text" name="demo-name" id="demo-name" value="" placeholder="Identifiant" />
+                                               <input type="text" name="id" id="demo-name" value="" placeholder="Identifiant" />
                                             </div>
 
                                             <div class="col-6 col-12-xsmall">
-                                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Mot de passe" />
+                                                <input type="password" name="password" id="demo-email" value="" placeholder="Mot de passe" />
                                             </div>
                                             <div class="col-12">
 
                                                 <ul class="actions">
-                                                    <li><input type="submit" value="OK" class="primary" /></li>
+                                                    <li><input type="submit" name ="send" value="OK" class="primary" /></li>
                                                 </ul>
+                                    
                                             </div>
+                                            <?php                        
+												if(isset($_POST['send'])){
+													if(!empty($first_name) && !empty($last_name) && !empty($email) && !empty($id) && !empty($password)){
+														extract($_POST);
+
+														try {
+															$conn = new PDO("mysql:host=sql313.byethost.com;dbname=b11_23898245_vegetalia",'b11_23898245','vegetalia95');
+															// set the PDO error mode to exception
+															$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+															$sql = "INSERT INTO usr (first_name, last_name, email, id, upassword) VALUES ('$first_name','$last_name','$email','$id','$password')";
+															// use exec() because no results are returned
+															$conn->exec($sql);
+															echo "<p>Inscription réussie. Bienvenue ! </p>";
+															echo "<p>Ne perdez plus de temps ! Connextez vous maintenant : <ahref=\"signIn.html\">se conecter</a></p>";
+														}
+														catch(PDOException $e)
+														{
+															echo $sql . "<br>" . $e->getMessage();
+														}
+													}
+													else{
+														echo '<p> Tous les champs n\'ont pas été remplis</p>';
+													}
+												}
+
+												else{
+													echo '<p>Veuillez renseigner tous les champs.</p>';
+												}
+			                                ?>
                                         </div>
                                     </form>
+                                     
 							</div>
 						</section>
 					</article>
