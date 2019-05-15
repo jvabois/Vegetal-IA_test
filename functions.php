@@ -13,11 +13,8 @@ function signup()
        extract($_POST);
 
       try {
-         $conn = new PDO("mysql:host=sql313.byethost.com;dbname=b11_23898245_vegetalia",'b11_23898245','vegetalia95');
-         // set the PDO error mode to exception
-         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
          $secret = password_hash($password, PASSWORD_BCRYPT);
-         echo'<p>secret : '.$secret.'</p>';
+         //echo'<p>secret : '.$secret.'</p>';
          $sql = "INSERT INTO usr (first_name, last_name, email, id, upassword) VALUES ('$first_name','$last_name','$email','$id','$secret')";
          // use exec() because no results are returned
          $conn->exec($sql);
